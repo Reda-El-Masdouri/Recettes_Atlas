@@ -38,9 +38,9 @@ table.info{
 }
 div.contenu {
     background-color: white;
-    margin: 70px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    
     box-shadow:  0 0 2em black;
     overflow: visible;
 }
@@ -75,18 +75,20 @@ div.info {
 table.info {
     border-radius: 50px;
     position: absolute; 
-    width: 100%; bottom: 0px; height: 60px;
+    width: 100%; 
+    bottom: 0px; 
+    height: 40px;
     color: white; 
     background-color: #6C829DC0; 
     
 }
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 table.info th {
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding: 4px;
     
@@ -99,19 +101,13 @@ img.info {
     background-color: lightgray;
 }
 .colonne {
-    width: 45%;
+    width: 100%;
     
 }
-div.colonne1 {
-    
+div.colonne1 {  
     display: inline-block;
-    margin-right: 10%;
 }
 
-div.colonne2 {
-    
-    float: right;
-}
 div.colonne h3 {
     text-align: center;
     text-transform: uppercase;
@@ -158,4 +154,47 @@ table.preparation tr {
 }
 div {
     overflow: auto;
+}
+
+
+
+/* For laptops: */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 70px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px; 
+    }
+    table.info {
+        height: 60px;         
+    }
+    table.info td {
+        font-size: 14px;
+    }
+    table.info th {
+        font-size: 16px;        
+    }
+    .colonne {
+        width: 45%;
+        
+    }
+    div.colonne1 {
+        margin-right: 10%;
+    }
+    
+    div.colonne2 {       
+        float: right;
+    }
+  }
+
+/* For larg screen: */
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 615px;
+        
+    }
+
+
 }
